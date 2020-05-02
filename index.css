@@ -1,0 +1,17 @@
+.title, .description, .form{
+    text-align: center;
+}
+form{
+    width:400px;
+    margin:auto;
+}
+.formlabel{
+    float:left;
+}
+input{
+    margin:0px 20px;
+    height:20px;
+    width:250px;
+    border-radius: 3px;
+    font-size:20px;
+}
