@@ -15,3 +15,8 @@ input{
     border-radius: 3px;
     font-size:20px;
 }
+.display{
+    font-size: 30px;
+    margin:20px 0px;
+    text-align:center;
+}

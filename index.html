@@ -9,16 +9,14 @@
 </head>
 <body>
     <div class="title">
-        <h1>How much lengths of codes have you written?</h1>
+        <h1>How much lengths of codes have you submitted?</h1>
     </div>
     <div class="description">
         <p>AtCoderで今までに提出したコード長の合計を表示します。</p>
     </div>
-    <form onsubmit="getSubmissions();">
+    <form class="form" onsubmit="getSubmissions();return false;">
         <label class="formlabel">Username:</label>
-        <form>
-           <input type="text" id="username">
+        <input type="text" id="username" autocomplete="off">
     </form>
-    </div>
 </body>
 </html?

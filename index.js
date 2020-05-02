@@ -5,12 +5,22 @@ function getSubmissions(){
     request.open('GET',requestURL);
     request.responseType='json';
     request.send();
-    alert(username);
     request.onload=(function(){
         var cnt=0;
         for(var submission of request.response){
             cnt+=submission["length"];
         }
-        alert(cnt);
+        var form=document.getElementsByClassName("form")[0];
+        if(form.nextElementSibling){
+            form.nextElementSibling.parentNode.removeChild(form.nextElementSibling);
+        }
+        form.insertAdjacentHTML("afterend",`
+            <div class="display">
+            `+username+`
+                 has submitted
+            `+cnt+`
+                byte of codes to AtCoder!
+            </div>
+        `);
     });
 }
